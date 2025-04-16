@@ -109,7 +109,7 @@ opt.undoreload = 10000
 opt.foldmethod = "marker"
 opt.foldlevel = 99
 
-opt.guifont = { "Source Code Pro", "h12" }
+opt.guifont = { "FiraMono Nerd Font Mono", "h16" }
 
 -- Disable builtin plugins
 local disabled_built_ins = {

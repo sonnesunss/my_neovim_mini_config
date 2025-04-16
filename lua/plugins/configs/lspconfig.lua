@@ -17,11 +17,27 @@ local formatting_servers = {
     jsonls = {},
     dockerls = {},
     bashls = {},
-    gopls = {},
+    --gopls = {},
     ruff_lsp = {},
     vimls = {},
     yamlls = {},
-    rust_analyzer = {}
+    rust_analyzer = {
+        settings = {
+            ["rust-analyzer"] = {
+                diagnostics = {
+                    enable = false,
+                },
+                cargo = {
+                    buildScripts = {
+                        enable = true,
+                    },
+                },
+                procMacro = {
+                    enable = true,
+                },
+            },
+        },
+    }
 }
 
 -- Merge
