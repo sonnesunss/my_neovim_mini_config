@@ -1,2 +1,8 @@
-# my_neovim_mini_config
-我的Neovim配置文件
+# Neovim config file
+
++ mappingkey
++ custom neovim
++ Plugins
++ Lsp
++ theme
+
