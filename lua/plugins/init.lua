@@ -58,6 +58,16 @@ local builtin_plugins = {
       priority = 1000,
       opts = {},
     },
+    -- rainbow-delimiters
+    {
+      "HiPhish/rainbow-delimiters.nvim",
+      dependencies = { "nvim-treesitter/nvim-treesitter" }, -- 依赖 Treesitter
+      event = { "BufReadPost", "BufNewFile" },
+      config = function()
+        require("rainbow-delimiters.setup").setup {}
+      end,
+    },
+    --
     { "nvim-lua/plenary.nvim" },
     -- File explore
     -- nvim-tree.lua - A file explorer tree for neovim written in lua
@@ -244,7 +254,7 @@ require("lazy").setup({
         -- install missing plugins on startup
         missing = true,
         -- try to load one of these colorschemes when starting an installation during startup
-        colorscheme = { "rose-pine", "habamax" }
+        colorscheme = { "rose-pine", ""tokyonight" }
     },
     checker = {
         -- automatically check for plugin updates
