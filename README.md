@@ -74,6 +74,12 @@ tree ~/.config/nvim
 > ⚠️ On MacOS need brew install rust-analyzer
 
 
+## Theme
+
+1. rose
+2. tokyonight
+
+
 ##  Customization
 
 You can customize this configuration by creating the custom module. You can choose either two ways:
