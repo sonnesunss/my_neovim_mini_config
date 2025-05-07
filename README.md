@@ -18,7 +18,7 @@
 - Backup your current neovim config, if necessary:
 
 ```shell
-# 备份你的neovim配置文件
+# backup your neovim config file
 mv ~/.config/nvim ~/.config/nvim.bak
 ```
 
@@ -66,6 +66,13 @@ tree ~/.config/nvim
     │   └── init.lua
     └── sample_custom.lua
 ```
+
+## Mason lsp
+
+1. rust
+
+> ⚠️ On MacOS need brew install rust-analyzer
+
 
 ##  Customization
 
