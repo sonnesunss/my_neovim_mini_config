@@ -68,6 +68,23 @@ local builtin_plugins = {
       end,
     },
     --
+    {
+      "lukas-reineke/indent-blankline.nvim",
+      main = "ibl",
+      ---@module "ibl"
+      ---@type ibl.config
+      opts = {},
+      config = function()
+            -- require("ibl").setup()
+            local ibl_highlight = require("plugins.configs.ibl_highlight")
+            require("ibl").setup {
+              indent = {
+                highlight = ibl_highlight.highlight
+              },
+            }
+      end,
+    },
+    --
     { "nvim-lua/plenary.nvim" },
     -- File explore
     -- nvim-tree.lua - A file explorer tree for neovim written in lua
