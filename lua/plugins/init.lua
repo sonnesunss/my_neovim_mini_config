@@ -254,7 +254,7 @@ require("lazy").setup({
         -- install missing plugins on startup
         missing = true,
         -- try to load one of these colorschemes when starting an installation during startup
-        colorscheme = { "rose-pine", ""tokyonight" }
+        colorscheme = { "rose-pine", "tokyonight" }
     },
     checker = {
         -- automatically check for plugin updates
