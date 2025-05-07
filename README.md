@@ -67,4 +67,19 @@ tree ~/.config/nvim
     └── sample_custom.lua
 ```
 
+##  Customization
+
+You can customize this configuration by creating the custom module. You can choose either two ways:
+
++ Create ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/lua/custom.lua file.
++ Create module ${XDG_CONFIG_HOME:-$HOME/.config}/nvim/lua/custom/ if your custom configuration is too long, and you want to separate it into multiple files.
+
+Checkout the sample custom file for the starting point. The logic is taken from CyberNvim. There are a number of defined sections in the config:
+
+1. M.setup_sources is used to add extra sources to connect to Null-ls - you can find a list of sources here. The parameter b is just short for null_ls.builtins.
+2. M.ensure_installed is used to add extra Treesitter highlighter.
+3. M.plugins is where you will add your own plugin definitions.
+4. M.configs is the most important section of your own configuration. This is where you can define any autocommands, require any files, or otherwise completely port your current configuration.
+5. M.formatting_servers is used to setup auto formatting rules. You need to select the language server that will provide autoformatting capabilities
+
 ## TODO
