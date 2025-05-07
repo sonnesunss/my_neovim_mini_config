@@ -30,8 +30,11 @@ mv ~/.config/nvim ~/.config/nvim.bak
 | Windows (cmd)        | `%localappdata%\nvim\`                    |
 | Windows (powershell) | `$env:LOCALAPPDATA\nvim\`                 |
 
-+ macos/linux: git clone https://github.com/sonnesunss/my_neovim_mini_config.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
++ macos/linux
 
+```shell
+git clone https://github.com/sonnesunss/my_neovim_mini_config.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+```
 
 - Restart Neovim and enjoy it.
 
