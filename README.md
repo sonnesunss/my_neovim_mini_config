@@ -1,5 +1,7 @@
 # Neovim config file
 
+> I've fully switched to NvChad, and they've done a fantastic job. I highly recommend it!
+
 1. installation
 2. file structure
 3. mapping key
